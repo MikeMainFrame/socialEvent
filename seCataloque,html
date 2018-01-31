@@ -3,7 +3,7 @@
       xml:lang="en">
   <head>
     <title>socialEvent :: af Mike/TRITICUM </title>
-    <link rel="stylesheet" href="se.css" type="text/css"  />
+    <!--link rel="stylesheet" href="se.css" type="text/css"  /-->
 </head>
 <body>  
 <div id="mother" >
@@ -16,6 +16,6 @@
     <img src="se9cakes.jpg" height="100%" />
   </div>
 </div>
-<script type="text/javascript" src="se.js" ></script>
+<!--script type="text/javascript" src="se.js" ></script-->
 </body>
 </html>
