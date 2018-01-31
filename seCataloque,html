@@ -3,46 +3,19 @@
       xml:lang="en">
   <head>
     <title>socialEvent :: af Mike/TRITICUM </title>
-    <link rel="stylesheet" href="cr.css" type="text/css"  />
+    <link rel="stylesheet" href="se.css" type="text/css"  />
 </head>
 <body>  
 <div id="mother" >
-  <div class="baseLine">
-    <table>
-      <tr><td>Check</td><td><input type="text" size="10" id="zCheck" value="0" onchange="unifyAmount(this);"></input></td></tr>    
-    </table>
-    <div style="float:right">
-      <div id="zMessage">KASSE</div>
-      <br />
-      <div>
-        <div>  
-          <div id="zAfslut"   class="buttonBase buttonChrome" onclick="makeSlot();">Bon &#xa0; F7</div>
-        </div>
-      </div>
-    </div>
-  </div>  
-  <br />  
-  <div id="teller">   
-    <div id="zNow"></div>
-    <div id="zSequenceNo">#0072654</div>
-    <div id="zCurrency">DKK</div>
-    <div id="zAmount">0.00</div>
-  </div>  
-  <br />  
-  <div id="headingLine">
-    <div class="col1"><div class="heading leftJ">Product</div></div>    
-    <div class="col2"><div class="heading">Pris</div></div>    
-    <div class="col3"><div class="heading">Kvantum</div></div>    
-    <div class="col4"><div class="heading">Summa</div></div>
-  </div>  
-  <br />    
-  <div id="zActionLine">
-    <div class="col1"><input type="text" size="10" id="zProduct" value="*"></input></div>    
-    <div class="col2"><input type="text" size="10" id="zPrice" value="0.00" onchange="unifyAmount(this);"></input></div>    
-    <div class="col3"><input type="text" size="10" id="zQuantum" value="0"></input></div>    
-    <div class="col4"><div id="zSumRow">0</div></div>
+  <div style="width: 50% ; float: left">
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id lobortis nulla. Vestibulum ornare vitae turpis in tincidunt. Nunc in iaculis velit. Curabitur fringilla, sem at pulvinar mattis, orci erat pellentesque justo, ac elementum dolor sem sed nunc. Aenean quis dictum ante, id vestibulum lorem. Sed velit erat, aliquam quis egestas sed, iaculis nec odio. Suspendisse id commodo elit. Etiam tincidunt eleifend sapien vel rutrum. Nullam ut magna sollicitudin mi tincidunt mattis scelerisque nec turpis. Vestibulum risus lectus, hendrerit tincidunt metus in, gravida euismod sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mollis ligula sit amet tristique ultricies.
+    </p>
   </div>
-  <div id="transaction"></div>
+  <div style="width: 48% ; float: right">
+    <img src="se9cakes.jpg" height="100%" />
+  </div>
 </div>
-<script type="text/javascript" src="cr.js" ></script>
-</body></html>
+<script type="text/javascript" src="se.js" ></script>
+</body>
+</html>
