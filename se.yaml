@@ -2,9 +2,8 @@ runtime: php55
 api_version: 1
 
 handlers:  
-- url: /static\se9cakes.jpg
-  static_files: se9cakes.jpg
-  upload: /static\se9cakes.jpg
+- url: /static/se9cakes.jpg
+  static_files: /static/se9cakes.jpg
 
 - url: /.*
   script: seCataloque.html
