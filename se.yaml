@@ -8,3 +8,6 @@ handlers:
 
 - url: /.*
   script: seCataloque.html
+  
+- url: /static/se.js
+  script: /static/se.js
