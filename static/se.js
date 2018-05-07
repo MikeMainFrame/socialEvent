@@ -6,6 +6,5 @@
        InlineEditor.create(zEditorA).then(console.log("A")).catch( error => { console.error( error )})
                }
                            );
-}
-()
-);
+})
+();
