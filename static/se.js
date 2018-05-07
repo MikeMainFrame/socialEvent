@@ -10,8 +10,7 @@
                 { modelElement: 'heading2', viewElement: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
             ]
         }
-    }).then(console.log("A")).catch( error => { console.error( error )})
-   );
+    }).then(console.log("A")).catch( error => { console.error( error )});
   
   var zEditorB = document.getElementById("CKEDITOR5x1");
   zEditorB.addEventListener("dblclick", 
