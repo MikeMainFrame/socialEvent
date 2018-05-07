@@ -8,5 +8,13 @@
                    .catch( error => { console.error( error )})
                }
    );
+  var zEditorB = document.getElementById("CKEDITOR5x1");
+  zEditorB.addEventListener("dblclick", 
+    function() {
+       InlineEditor.create(zEditorB)
+                   .then(console.log("B"))
+                   .catch( error => { console.error( error )})
+               }
+   );
 })
 ();
