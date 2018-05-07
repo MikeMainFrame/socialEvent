@@ -1,2 +1,2 @@
 # socialEvent
-Ordrr some food for your anniversary or celebration
+Order some food for your anniversary or celebration or for fun
