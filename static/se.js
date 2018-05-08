@@ -1,8 +1,7 @@
 (function initializeCKEDITOR5 () 
 {
   
-  import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-  
+    
   var zEditorA = document.getElementById("CKEDITOR5x0");
   InlineEditor.create(zEditorA)
               .then(console.log("CKEDITOR5x0"))
@@ -10,6 +9,8 @@
     
   var zEditorB = document.getElementById("CKEDITOR5x1");
   
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 ClassicEditor
     .create( zEditorB )
     .then( editor => {
