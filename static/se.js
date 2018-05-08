@@ -1,6 +1,6 @@
 (function initializeCKEDITOR5 () 
 {
-  import InlineEditor from '@ckeditor/ckeditor5-editor-inline/src/inlineeditor';
+  // import InlineEditor from '@ckeditor/ckeditor5-editor-inline/src/inlineeditor';
     
   var zEditorA = document.getElementById("CKEDITOR5x0");
   InlineEditor.create(zEditorA)
@@ -9,7 +9,7 @@
     
   var zEditorB = document.getElementById("CKEDITOR5x1");
   InlineEditor.create( zEditorB )
-              .then(console.log("CKEDITOR5x0"))
+              .then(console.log("CKEDITOR5x1"))
               .catch( error => { console.error( error )});
 
 })
