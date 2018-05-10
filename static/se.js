@@ -8,7 +8,7 @@
     
   var zEditorB = document.getElementById("CKEDITOR5x1");
   
-  InlineEditor.create( zEditorB )
+  InlineEditor.create(zEditorB)
               .then(console.log("CKEDITOR5x1"))
               .catch( error => { console.error( error )});
   
