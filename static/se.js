@@ -8,9 +8,7 @@
     
   var zEditorB = document.getElementById("CKEDITOR5x1");
   
-  import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
-  ClassicEditor.create( zEditorB )
+  InlineEditor.create( zEditorB )
               .then(console.log("CKEDITOR5x1"))
               .catch( error => { console.error( error )});
   
