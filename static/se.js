@@ -18,7 +18,7 @@
 (function calendarSetup() {
     var zHook = document.getElementById("zCalendar"), div = document.createElement('div'); 
     var thisDate = new Date(), temp = thisDate, firstJan = new Date();
-    firstJan.setDay(1), firstJan.setDate(1); 
+    firstJan.setDate(1), firstJan.setMonth(0); 
     do {    
       if (thisDate.getDay() === 1) {
          zHook.appendChild(div) 
