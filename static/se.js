@@ -27,7 +27,7 @@
       var span = document.createElement('span');
       span.textContent = thisDate.getDate(); 
       div.appendChild(span);
-      thisDate.setTime(parsetInt(thisDate.getTime()) + (24*60*60*1000));  
+      thisDate.setTime(parseInt(thisDate.getTime()) + (24*60*60*1000));  
     } while (thisDate.getFullYear() === firstJan.getFullYear());
     zHook.appendChild(div);
 })
