@@ -13,7 +13,6 @@
               .catch( error => { console.error( error )});
   
   zEditorA.addEventListener("blur", function () {console.log(this.innerHTML)});
-  calendarSetup();
 })
 ();
 (function calendarSetup() {
