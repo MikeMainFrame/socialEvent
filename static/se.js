@@ -20,7 +20,7 @@
     var thisDate = new Date(), temp = thisDate, firstJan = new Date();
     firstJan.setDate(1), firstJan.setMonth(0); 
     do {    
-      if (thisDate.getDay() === 1) {
+      if (thisDate.getDate() === 1) {
          zHook.appendChild(div) 
          var div = document.createElement('div');      
       } 
