@@ -17,16 +17,18 @@
 ();
 (function calendarSetup() {
     var zHook = document.getElementById("zCalendar"), div = document.createElement('div'); 
-    var thisDate = new Date(), temp = thisDate, firstJan = new Date();
+    var thisDate = new Date(), firstJan = new Date();
     firstJan.setDate(1), firstJan.setMonth(0); 
     do {    
       if (thisDate.getDate() === 1) {
-         zHook.appendChild(div) 
-         var div = document.createElement('div');      
+        zHook.appendChild(div) 
+        var div = document.createElement('div');     
+        div.setAttribute("class","month");
       } 
-      var span = document.createElement('span');
-      span.textContent = thisDate.getDate(); 
-      div.appendChild(span);
+      var divDate = document.createElement('div');
+      divDate.setAttribute("class","day");
+      divDate.textContent = thisDate.getDate(); 
+      div.appendChild(divDate);
       thisDate.setTime(parseInt(thisDate.getTime()) + (24*60*60*1000));  
     } while (thisDate.getFullYear() === firstJan.getFullYear());
     zHook.appendChild(div);
