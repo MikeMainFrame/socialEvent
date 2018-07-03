@@ -17,8 +17,8 @@
 ();
 (function calendarSetup() {
     var zHook = document.getElementById("zCalendar"), div = document.createElement('div'); 
-    var thisDate = new Date(), firstJan = new Date();
-    firstJan.setDate(1), firstJan.setMonth(0); 
+    var thisDate = new Date(), lastDay = new Date();
+    lastDay.setDate(31), lastDay.setMonth(11); 
     do {    
       if (thisDate.getDate() === 1) {
         zHook.appendChild(div) 
@@ -29,8 +29,8 @@
       divDate.setAttribute("class","day");
       divDate.textContent = thisDate.getDate(); 
       div.appendChild(divDate);
-      thisDate.setTime(parseInt(thisDate.getTime()) + (24*60*60*1000));  
-    } while (thisDate.getFullYear() === firstJan.getFullYear());
+      thisDate.setTime(parseInt(thisDate.getTime()) - (24*60*60*1000));  
+    } while (thisDate.getFullYear() === lastDay.getFullYear());
     zHook.appendChild(div);
 })
 ();
