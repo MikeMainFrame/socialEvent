@@ -1,7 +1,5 @@
 (function initializeCKEDITOR5 () {
   
-  import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
   var zEditorA = document.getElementById("CKEDITOR5x0");
   
   InlineEditor.create(zEditorA)
@@ -12,7 +10,7 @@
 })
 ();
 (function calendarSetup() {
-      return; // work in progress
+    return; // work in progress
     var zHook = document.getElementById("zCalendar"), div = document.createElement('div'); 
     var thisDate = new Date(), thisYear = thisDate.getFullYear();
     do {    
