@@ -75,7 +75,7 @@
      
      g.appendChild(text);             
                         
-   } while (today.getFullYear() === thisDate.getFullYear() && x < 18100);
+   } while (today.getFullYear() === zDate.getFullYear() && x < 18100);
    
    id.appendChild(g);
   
