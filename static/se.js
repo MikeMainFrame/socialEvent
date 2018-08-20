@@ -33,7 +33,7 @@
 */
 (function calendarSetup(id) {
 
-   var thisDate, zDate = new Date(), x = 0, y = 0;
+   var today, thisDate, zDate = new Date(), x = 0, y = 0;
    
    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');                  
    g.setAttribute("id", 'dates');
@@ -47,7 +47,7 @@
    rect.setAttribute("width", 18100);    
    rect.setAttribute("height", 80);    
    rect.setAttribute("rx", 10);    
-   rect.setAttribute("fill", 'rgba(0,0,64,0.8)');
+   rect.setAttribute("fill", 'rgba(255,96,0,0.5)');
    
    g.appendChild(rect);             
    
@@ -62,7 +62,7 @@
      rect.setAttribute("width", 300);    
      rect.setAttribute("height", 75);    
      rect.setAttribute("rx", 15);    
-     rect.setAttribute("fill", 'rgba(0,0,255,0.5)');                      
+     rect.setAttribute("fill", 'rgba(255,128,0,0.5)');                      
      rect.setAttribute("zdate", thisDate);   
      
      g.appendChild(rect); 
@@ -75,7 +75,7 @@
      
      g.appendChild(text);             
                         
-   } while (thisDate.getFullYear() === thisYear && x < 18100);
+   } while (today.getFullYear() === thisDate.getFullYear() && x < 18100);
    
    id.appendChild(g);
   
