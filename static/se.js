@@ -54,14 +54,14 @@
    do {
      zDate = new Date(parseInt(zDate.getTime())+86400000);
      var thisDate = parseInt((zDate.getFullYear() * 1.0E4) + ((zDate.getMonth() + 1) * 1.0E2) + zDate.getDate());
-     x = (zDate.getMonth() * 305) + 305;
+     x = (zDate.getDate() * 305) + 305;
      var rect = document.createElementNS("http://www.w3.org/2000/svg", 'rect');            
      rect.setAttribute("x", x);
      rect.setAttribute("y", 1);    
      rect.setAttribute("width", 300);    
      rect.setAttribute("height", 75);    
      rect.setAttribute("rx", 15);    
-     rect.setAttribute("fill", 'rgba(255,128,0,0.5)');                      
+     rect.setAttribute("fill", '#000');                      
      rect.setAttribute("zdate", thisDate);   
      
      g.appendChild(rect); 
