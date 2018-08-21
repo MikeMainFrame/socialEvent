@@ -33,48 +33,39 @@
 */
 (function calendarSetup(id) {
 
-   var today = new Date(), thisDate, zDate = new Date(), x = 0, y = 0;
+   var today = new Date(), thisDate, zDate = new Date(), y = 0, ix = 0;
    
    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');                  
    g.setAttribute("id", 'dates');
-   g.setAttribute("fill", '#fff');
-   g.setAttribute("font-size", 24);  
+   g.setAttribute("fill", '#000');
+   g.setAttribute("font-size", 26);  
+   g.setAttribute("font-weight", 900);  
    g.setAttribute("text-anchor", 'middle');  
-
-   var rect = document.createElementNS("http://www.w3.org/2000/svg", 'rect');               
-   rect.setAttribute("x", 100);
-   rect.setAttribute("y", 150);    
-   rect.setAttribute("width", 18100);    
-   rect.setAttribute("height", 80);    
-   rect.setAttribute("rx", 10);    
-   rect.setAttribute("fill", 'rgba(255,96,0,0.5)');
-   
-   g.appendChild(rect);             
    
    do {
      zDate = new Date(parseInt(zDate.getTime())+86400000);
      var thisDate = parseInt((zDate.getFullYear() * 1.0E4) + ((zDate.getMonth() + 1) * 1.0E2) + zDate.getDate());
-     x = (zDate.getDate() * 305) + 305;
+     ix++;
+     
      var rect = document.createElementNS("http://www.w3.org/2000/svg", 'rect');            
-     rect.setAttribute("x", x);
+     rect.setAttribute("x", (ix * 305));
      rect.setAttribute("y", 1);    
      rect.setAttribute("width", 300);    
      rect.setAttribute("height", 75);    
-     rect.setAttribute("rx", 15);    
-     rect.setAttribute("fill", '#000');                      
+     rect.setAttribute("rx", 15);               
      rect.setAttribute("zdate", thisDate);   
      
      g.appendChild(rect); 
      
      var text = document.createElementNS("http://www.w3.org/2000/svg", 'text');            
-     text.setAttribute("x", x + 150);
+     text.setAttribute("x", (ix * 305) + 150);
      text.setAttribute("y", y + 47);      
      text.setAttribute("fill", '#fff');            
      text.textContent = formatT(thisDate.toString());    
      
      g.appendChild(text);             
                         
-   } while (today.getFullYear() === zDate.getFullYear() && x < 18100);
+   } while (today.getFullYear() === zDate.getFullYear());
    
    id.appendChild(g);
   
