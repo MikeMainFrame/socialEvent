@@ -33,7 +33,7 @@
 */
 (function calendarSetup(id) {
 
-   var today, thisDate, zDate = new Date(), x = 0, y = 0;
+   var today = new Date(), thisDate, zDate = new Date(), x = 0, y = 0;
    
    var g = document.createElementNS("http://www.w3.org/2000/svg", 'g');                  
    g.setAttribute("id", 'dates');
@@ -53,9 +53,8 @@
    
    do {
      zDate = new Date(parseInt(zDate.getTime())+86400000);
-     x = (zDate.getMonth() * 305) + 305;
      var thisDate = parseInt((zDate.getFullYear() * 1.0E4) + ((zDate.getMonth() + 1) * 1.0E2) + zDate.getDate());
-     
+     x = (zDate.getMonth() * 305) + 305;
      var rect = document.createElementNS("http://www.w3.org/2000/svg", 'rect');            
      rect.setAttribute("x", x);
      rect.setAttribute("y", 1);    
